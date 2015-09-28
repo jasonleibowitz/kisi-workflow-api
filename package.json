@@ -1,0 +1,16 @@
+{
+  "name": "kisi-workflow-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jason Leibowitz",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3",
+    "request": "^2.64.0",
+    "unirest": "^0.4.2"
+  }
+}
