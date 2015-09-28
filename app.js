@@ -39,6 +39,7 @@ function openKisi() {
 		if (error) throw new Error(error);
 		console.log('statusCode: ', response.statusCode);
 		console.log('body: ', body);
+		return response.statusCode;
 	})
 }
 
@@ -48,7 +49,8 @@ app.get('/', function(req, res) {
 
 app.get('/open', function(req, res) {
 	// var authCode = req.query.auth;
-	openKisi();
+	var statusCode = openKisi();
+	res.send(statusCode);
 });
 
 // production error handler
